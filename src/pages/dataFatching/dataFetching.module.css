@@ -1,0 +1,151 @@
+.text-center {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+    margin: 0;
+}
+
+.container {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+.dataisloading {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data {
+    text-align: center;
+}
+
+
+
+
+/*==============================================
+    Product Card Start
+==============================================*/
+
+.productCard {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.productImage {
+    margin-bottom: 10px;
+    min-height: 200px;
+    text-align: center;
+}
+
+.ProductDiscount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productDiscountPrice {
+    text-decoration: line-through;
+    font-size: 14px;
+    line-height: 22px;
+    color: #747474;
+    font-weight: 500;
+}
+
+.discountPercent {
+    color: rgb(255, 255, 255);
+    padding: 0 7px;
+    font-size: 12px;
+    background: #C20000;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+
+.ProductPrice {
+    color: #373737;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.productDetails {
+    min-height: 105px;
+}
+
+.productImage img {
+    height: 200px;
+    max-width: 160px;
+    object-fit: contain;
+    transition: 0.2s ease-in-out;
+    object-position: center;
+    margin: auto;
+}
+
+.rating i.fa-solid {
+    color: #ffb83a;
+    height: 25px;
+    width: 17px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.product_slider .slick-slide {
+    margin: 0px .75rem;
+}
+
+/*==============================================
+    Product Card End
+==============================================*/
+.section {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+article {
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+article .productImg {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+article img {
+    height: 200px;
+    object-fit: contain;
+    width: 160px;
+}
+
+@media screen and (min-width: 600) {
+    .section {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 992) {
+    .section {
+        grid-template-columns: auto auto auto;
+    }
+}
